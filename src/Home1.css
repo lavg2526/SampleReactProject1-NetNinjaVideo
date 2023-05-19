@@ -1,0 +1,11 @@
+.blogs {
+  border: 9px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.title {
+  color: rgb(247, 141, 71);
+}
+.origin {
+  color: rgb(241, 178, 181);
+}
