@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MangoList from "./MangoList";
+import UseFetch from "./UseFetch";
 const Home = () => {
   const [blogs, setBlogs] = useState([
     {
@@ -18,6 +19,7 @@ const Home = () => {
       id: 3,
     },
   ]);
+
   const handleDelete = (id) => {
     setBlogs(
       blogs.filter((blog) => {
@@ -25,9 +27,10 @@ const Home = () => {
       })
     );
   };
+  const { info } = UseFetch("https://randomuser.me/api/");
   return (
     <div>
-      <MangoList blogs={blogs} handleDelete={handleDelete} />
+      <MangoList blogs={blogs} handleDelete={handleDelete} info={info} />
     </div>
   );
 };
