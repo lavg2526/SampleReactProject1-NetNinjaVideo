@@ -3,7 +3,9 @@ const Navbar = () => {
     <div className="navbar">
       <h1> Its Mango Season </h1>
       <nav className="links">
-        <a href="/">Types </a>
+        <a className="about" href="/">
+          About
+        </a>
         <a className="price" href="/Price">
           Price
         </a>

@@ -1,0 +1,17 @@
+{
+   "blogs": [{
+    "Title" : "Raspuri Mango",
+    "Origin" : "Mysore",
+    "id1": 1
+},
+{
+    "Title" : "Alphonso mango",
+    "Origin" : "Portuguese",
+    "id2": 2
+},
+{
+    "Title" : "Banganapalli",
+    "Origin" : "Andra Pradesh",
+    "id2": 3
+}]
+}

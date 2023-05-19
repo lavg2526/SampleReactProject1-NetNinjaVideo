@@ -17,6 +17,11 @@
 .navbar h1 {
   color: #f1356d;
 }
+h3 {
+  background-color: rgb(247, 191, 200);
+  text-align: center;
+  border-radius: 10px;
+}
 .navbar .links {
   margin-left: auto;
 }
@@ -25,13 +30,18 @@
   text-decoration: none;
   padding: 6px;
 }
+.about {
+  color: white;
+  background-color: #976876;
+  border-radius: 8px;
+}
 .price {
   color: white;
-  background-color: green;
+  background-color: indianred;
   border-radius: 8px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: black;
 }
 .content {
   max-width: 600px;
