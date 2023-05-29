@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Price from "./Price";
 import Info from "./Info";
+import CustomerInfo from "./CustomerInfo";
 import { BrowserRouter as Routes, Route, Switch } from "react-router-dom";
 
 export default function App() {
@@ -20,6 +21,9 @@ export default function App() {
           </Route>
           <Route path="/Price">
             <Price />
+          </Route>
+          <Route path="/customerInfo">
+            <CustomerInfo />
           </Route>
         </div>
       </Switch>

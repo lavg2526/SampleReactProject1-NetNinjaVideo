@@ -29,11 +29,15 @@ const Home = () => {
     );
   };
 
-  const { info } = UseFetch1("https://randomuser.me/api/");
+  const { info, loading, error } = UseFetch1("https://randomuser.me/api/");
 
   return (
     <div>
-      <ListMango blogs={blogs} handleDelete={handleDelete} info={info} />
+      {loading && <div>Loading...</div>}
+      {error && <div>{error}</div>}
+      {info && (
+        <ListMango blogs={blogs} handleDelete={handleDelete} info={info} />
+      )}
     </div>
   );
 };

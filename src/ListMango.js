@@ -1,4 +1,5 @@
 import "./Home1.css";
+import CustomerInfo from "./CustomerInfo";
 const ListMango = ({ blogs, handleDelete, info }) => {
   console.log("LAVG info:", info);
   return (
@@ -9,19 +10,7 @@ const ListMango = ({ blogs, handleDelete, info }) => {
           <p className="origin">
             Origin: <span> {blog.origin}</span>
           </p>
-          <h5>Get Customer Information: </h5>
-          {info.map((custInfo) => (
-            <>
-              <ul>
-                <li>Gender:{custInfo.gender} </li>
-                <li>Age:{custInfo.dob.age}</li>
-                <li>Name:{custInfo.id.name}</li>
-                <li>Country:{custInfo.location.country}</li>
-                <li>Postcode:{custInfo.location.postcode}</li>
-              </ul>
-            </>
-          ))}
-
+          <a href="/customerInfo">Get Customer Information:</a>
           <button onClick={() => handleDelete(blog.id)}>Delete</button>
         </div>
       ))}
