@@ -14,6 +14,9 @@ const Navbar = () => {
         <a className="price" href="/Price">
           Price
         </a>
+        <a className="cart" href="/Cart">
+          cart
+        </a>
         {/* // we can use Link tag to get data from JS bundle 
         <Link className="about" to="/About">
           About

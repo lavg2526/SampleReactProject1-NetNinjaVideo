@@ -1,4 +1,8 @@
 const Price = () => {
-  return <h2>Welcome to New Page </h2>;
+  return (
+    <>
+      <h2>Check Mango Price </h2>
+    </>
+  );
 };
 export default Price;

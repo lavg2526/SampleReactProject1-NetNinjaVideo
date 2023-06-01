@@ -1,6 +1,6 @@
 import "./Home1.css";
 import CustomerInfo from "./CustomerInfo";
-const ListMango = ({ blogs, handleDelete, info }) => {
+const ListMango = ({ blogs, info }) => {
   console.log("LAVG info:", info);
   return (
     <div>
@@ -10,8 +10,7 @@ const ListMango = ({ blogs, handleDelete, info }) => {
           <p className="origin">
             Origin: <span> {blog.origin}</span>
           </p>
-          <a href="/customerInfo">Get Customer Information:</a>
-          <button onClick={() => handleDelete(blog.id)}>Delete</button>
+          <a href={`/customerInfo/${blog.id}`}>Get Customer Information:</a>
         </div>
       ))}
     </div>

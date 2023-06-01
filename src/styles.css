@@ -48,3 +48,8 @@ h3 {
   margin: 40px auto;
   padding: 20px;
 }
+.cart {
+  color: white;
+  background-color: #976876;
+  border-radius: 8px;
+}
